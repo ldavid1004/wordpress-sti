@@ -13,8 +13,8 @@ LABEL io.k8s.description="Platform for building and running Wordpress applicatio
 # The $HOME is not set by default, but some applications needs this variable
 ENV HOME=/opt/app-root/src \
     PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/app-root/src/bin:/opt/app-root/bin:/usr/local/sti:$PATH \
-    WORDPRESS_VERSION 4.3 \
-    WORDPRESS_SHA1 1e9046b584d4eaebac9e1f7292ca7003bfc8ffd7
+    WORDPRESS_VERSION=4.3 \
+    WORDPRESS_SHA1=1e9046b584d4eaebac9e1f7292ca7003bfc8ffd7
 
 RUN groupadd -r default -f -g 1001 && \
     useradd -u 1001 -r -g default -d ${HOME} -s /sbin/nologin \
