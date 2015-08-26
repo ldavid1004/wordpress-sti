@@ -1,4 +1,4 @@
-FROM openshift/sti-php
+FROM ip-172-31-27-60.us-west-2.compute.internal:5000/wordpress
 
 MAINTAINER lysander_david@symantec.com
 
@@ -24,6 +24,9 @@ RUN groupadd -r default -f -g 1001 && \
 
 # copy config
 COPY ./etc/apache2/apache2.conf /etc/apache2/apache2.conf
+
+# Copy the STI scripts from the specific language image to /usr/local/sti
+COPY ./.sti/bin/ /usr/local/sti
 
 USER 1001
 
