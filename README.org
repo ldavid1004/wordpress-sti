@@ -1,0 +1,9 @@
+Wordpress sti creation
+
+* Description
+
+Dockerfile to create wordpress sti image
+
+* COMMANDS
+
+docker build

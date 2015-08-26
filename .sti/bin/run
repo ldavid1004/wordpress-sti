@@ -1,0 +1,4 @@
+#!/bin/bash
+ 
+/entrypoint.sh apache2-foreground
+
