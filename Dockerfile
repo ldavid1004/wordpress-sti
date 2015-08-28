@@ -1,4 +1,5 @@
-FROM ip-172-31-27-60.us-west-2.compute.internal:5000/wordpress
+# FROM ip-172-31-27-60.us-west-2.compute.internal:5000/wordpress
+FROM wordpress
 
 MAINTAINER lysander_david@symantec.com
 
