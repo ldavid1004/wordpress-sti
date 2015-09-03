@@ -13,7 +13,7 @@ ls -al .
 
 
 echo "---> Installing application source..."
-cp -Rf /tmp/src/. ./
+cp -Rf /tmp/src/. /usr/src/wordpress
 
 if [ -f composer.json ]; then
   echo "Found 'composer.json', installing dependencies using composer.phar... "
