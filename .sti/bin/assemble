@@ -1,6 +1,16 @@
 #!/bin/bash
 
-set -e
+# set -e
+
+echo "--->id<---"
+id
+
+echo "pwd"
+pwd
+
+echo "listing"
+ls -al .
+
 
 echo "---> Installing application source..."
 cp -Rf /tmp/src/. ./
